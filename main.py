@@ -1,12 +1,3 @@
-'''
-   Daniel Felipe Villa Rengifo
-   Lenguaje Utilizado: Python
-   Tema: Programación Orientada a Objetos. Herencia.
-   Fuentes de referencias:
-     1. https://j2logo.com/python/tutorial/programacion-orientada-a-objetos/
-     2. https://www.programiz.com/python-programming/inheritance
-'''
-
 # Ejemplo 1:
 print('------------------------------------------------------')
 print('\n# Ejemplo 1:')
@@ -44,7 +35,7 @@ class Persona(object):
 
 ## Definimos una segunda clase:
 print('\n## Definimos una segunda clase:')
-print('\m# Definimos la lista de linaje:')
+print('\n# Definimos la lista de linaje:')
 linajes_lista = ['Vega', 'Velarde', 'Barreda', 'Polanco', 'Villa', 'Velasco', 'Fernández', 'Villegas', 'Dávila', 'Enríquez', 'Gutiérrez', 'Guzmán', 'Meneses', 'Fierro', 'Miranda', 'Morenilla', 'Torres', 'Valencia', 'Vargas', 'Vélez', 'Zúñiga', 'Cossío']
 print(linajes_lista)
 
@@ -74,8 +65,8 @@ class Casta(Persona): # Entre parentesis definimos la clase Padre o principal
       print(f'Mi nombre es {self.nombre} y mi apellido es {self.apellido}')
 
 ## Definimos el nombre y apellido del usuario:
-nom = input('Ingrese su Primer o Segundo Nombre (Primer letra en mayuscula)')
-ap = input('Ingrese su Primer o Segundo Apellido (Primer letra en mayuscula)')
+nom = input('Ingrese su Primer o Segundo Nombre \n(Primer letra en mayuscula)')
+ap = input('Ingrese su Primer o Segundo Apellido \n(Primer letra en mayuscula)')
 
 ## Ingresamos los valores a la clase padre:
 print('\n## Ingresamos los siguiente valores a la clase padre:')
@@ -101,7 +92,6 @@ nombre y edad pertenecen a Persona.
 # Fin del Ejemplo:
 print('# Fin del Ejemplo:')
 print('------------------------------------------------------')
-
 
 # Ejemplo 2:
 print('------------------------------------------------------')
@@ -158,7 +148,7 @@ class Cuenta:
     comprobante = "".join(c)
     print(f'{deposito} Consignación exitosa, Tu comprobante es {comprobante}')
   
-  def retiro(sef, resta):
+  def retiro(self, resta):
     '''
     En este metodo se vamos sustrayendo
     de la cuenta dde ahorros,
@@ -168,7 +158,7 @@ class Cuenta:
     cuenta_ahorro
     if resta > self.saldo:
 
-      print(f'Saldo insuficiente = {saldo}, Intente nuevamente')
+      print(f'Saldo insuficiente = {self.saldo}, Intente nuevamente')
       return
     
     self.Saldo -= resta # Si lo que saco es menor o igual al saldo, imprimira que el retiro fue exitoso
@@ -209,4 +199,7 @@ cuenta_ahorro = S_Cuenta(1000)
 cuenta_ahorro.retiro(400)
 cuenta_ahorro.consulta_saldo()
 cuenta_ahorro.interes(4.3)
-# Fin del mett
+
+# Fin del Ejemplo:
+print('# Fin del Ejemplo:')
+print('------------------------------------------------------')
