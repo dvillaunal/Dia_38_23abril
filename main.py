@@ -94,6 +94,7 @@ print('# Fin del Ejemplo:')
 print('------------------------------------------------------')
 
 # Ejemplo 2:
+from random import randint
 print('------------------------------------------------------')
 print('# Ejemplo 2:')
 
